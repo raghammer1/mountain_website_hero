@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: 'Rubik', sans-serif;
+}
+
+body {
+  /* background-size: cover; */
+}
+
+.grid {
+  display: grid;
+  column-gap: 34px;
+  row-gap: 16px;
+}
+
+.grid:not(:last-child) {
+  margin-bottom: 9.6rem;
+}
+
+.grid--2-cols {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid--3-cols {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid--4-cols {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.grid--5-cols {
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.grid--center-v {
+  align-items: center;
+}
+
+header {
+  background-image: url(mountain.jpg);
+  background-size: cover;
+  height: 100vh;
+}
+
+.header-hero {
+  padding: 50px;
+}
+
+.container {
+  max-width: 2500px;
+  display: flex;
+  gap: 100px;
+  padding: 24px 100px;
+}
+
+.logo {
+  width: 250px;
+  height: auto;
+  margin-left: 10px;
+  align-items: center;
+  justify-self: center;
+  filter: brightness(0.8);
+}
+
+.nav-link:link,
+.nav-link:visited {
+  color: #111;
+  text-decoration: none;
+  background-color: rgb(85, 179, 246, 0.15);
+  opacity: 0.6;
+  padding: 10px 10px;
+  border-radius: 9px;
+  transition: all 0.3s;
+}
+
+.nav-link:hover,
+.nav-link:active {
+  background-color: #4dabf7;
+  box-shadow: 2px 0px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.header-hero-text {
+  font-size: 80px;
+  text-align: right;
+  color: #444;
+  display: flex;
+  flex-direction: column;
+  font-weight: 500;
+}
+
+.header-text {
+  margin-right: 50px;
+  transform: translate(-10%, -30%);
+}
+
+.new {
+  color: #666;
+  font-size: 15px;
+  font-weight: 800;
+  margin-top: 10px;
+}
